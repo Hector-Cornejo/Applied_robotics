@@ -10,8 +10,6 @@ The right hand rule is used to define the orientaion of the Cartesian coordinate
 The right-hand rule is also a convention used to determine the direction of rotation and to define whether a rotation is positive or negative. To apply it, point **the thumb of your right hand in the direction of the positive axis of rotation**. The direction in which your fingers curl indicates the positive direction of rotation around that axis.
 
 <img src="../recursos/imgs/right_hand.png" alt="axis" width="420">
-<img src="../recursos/imgs/right_hand_rotation.png" alt="rotation" width="420">
-
 
 ## 1)
 <img src="../recursos/imgs/trsf_nom_1.jpeg" alt="Ejercico 1" width="420">
@@ -39,7 +37,7 @@ In order to multiply two matrices, the number of columns of the first matrix mus
 Finally we just need to simplify our result and we get the rotation matrix **R** whit all its axis components:
 
 <img src="../recursos/imgs/matrix_sim.png" alt="rotation matrix R" width="420">
-
+---
 
 
 !!! tip "Consejo"
