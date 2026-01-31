@@ -62,3 +62,53 @@ The next step would be to calculate the translation of B from A but in this case
 Now the problem is asking the formulation of a homogeneous transform matrix. Which is the combination of both rotation and translation in a single transformation. This results in a 4x4 matrix containing the matrix of the rotation and the translation vector. For this particular problem it looks like this:
 
 <img src="../recursos/imgs/transform_matrix.jpeg" alt="Transformation matrix" width="420">
+---
+
+## 3)Third problem
+<img src="../recursos/imgs/trsf_nom_2.png" alt="Ejercico 2" width="550">
+
+This problem is asking for the homogeneouus transformation matrix from reference frame A to reference frame B, as well as the transformation matrix from reference frame A to reference frame C. So in this case we have to different matrixes that are independent from one another so it each one recures an individual analysis of the movement that composes them.
+
+In my case I decided to star by studying the transformation matrix from reference frame A to reference frame B, keep in mind that it won’t affect the result which one is solved first since they don’t hold any relation to each other.
+
+For the movement from frame A to B it can be concluded by looking at image presented that the first movement of this transformation is a translation:
+
+<img src="../recursos/imgs/" alt="Translation vector from A to B" width="420">
+
+As shown in the image above, the translation from frame A to B is simple as its only translation over the X axis, meaning that the vector would look like this (considering that we are solving a problem in a 3D space):
+
+<img src="../recursos/imgs/" alt="Translation vector from A to B" width="420">
+
+Now the translated frame must be rotated in a way that matches its destination as it’s shown. It can be observed that the translated A frame Y_A and X_A axis are in the opposite direction in comparison to the Y_B and X_A axis. It can be concluded that the rotation is about the Z axes by an angle of 180 degrees:
+
+<img src="../recursos/imgs/" alt="Rotation of frame B" width="420">
+
+Having the rotation visualized, the rotation matrix can be formulated:
+
+<img src="../recursos/imgs/" alt="Rotation matrix B" width="420">
+
+Now all that is left is to obtain the homogeneous transformation matrix by combining both the vector translation and the matrix rotation as we did the last problem:
+
+<img src="../recursos/imgs/" alt="Transformation A to B" width="420">
+
+For the homogeneous transformation matrix from A to C we can assume that the first movement was also a translation, this translation is composed of coordinates. X and Z which results in a translator vector:
+
+<img src="../recursos/imgs/" alt="Translation vector from A to C" width="420">
+
+It now can be observed that to complete the transformation from A to C, we need rotations, and after analyzing the image it can be concluded that the rotations are as follows: one rotation along the Y axis, and another along the X axis. As a side tangent its important to bring up the fact that one the A frame is translated onto the C frame, none of the axis from the A frame are aligned with the C frame, which means that you can start the rotation alongside any axis, that would result in one or more axis from the A frame to coincide with the axis of the C frame, and get to the same point as anyone else that’s doing the same exercise because physically, if the problem is solved correctly, the matrixes product will be equivalent to other products made by other people, and this doesn’t have anything to do with any commutative properties (which matrixes don’t have). It’s more so because by using different axis as reference we create equivalent matrixes.  Basically, it doesn’t matter which rotation anyone choose to start (which in this case there are only 4 possible combinations) as long as the rotations end with the frame A coinciding with the frame C the matrixes will be equivalent.  
+In my case I started the rotation alongside the Y axis by 90 degrees:
+
+<img src="../recursos/imgs/" alt="Rotation1_Y" width="420">
+
+Once we star to visualize and follow the rotation is very easy to understand by which axis it needs to be rotated, in the image above its logical that the next rotation is made along the X axis by -30 degrees.
+
+<img src="../recursos/imgs/" alt="Rotation1_X" width="420">
+
+Once we have both matrixes we need to multiply them to now the complete rotation of the AC frame.
+
+<img src="../recursos/imgs/" alt="Matrix AC rotation poroduct" width="420">
+
+After simplifying the matrix we get this:
+
+<img src="../recursos/imgs/" alt="Matrix AC rotation result" width="420">
+
