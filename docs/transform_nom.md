@@ -112,3 +112,7 @@ After simplifying the matrix we get this:
 
 <img src="../recursos/imgs/" alt="Matrix AC rotation result" width="420">
 
+All that is left is to obtain the homogeneous transformation matrix by combining both the vector translations with the frame rotation:
+
+<img src="../recursos/imgs/" alt="Homgeneous transformation AC" width="420">
+
