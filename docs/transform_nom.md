@@ -94,7 +94,7 @@ For the homogeneous transformation matrix from A to C we can assume that the fir
 It now can be observed that to complete the transformation from A to C, we need rotations, and after analyzing the image it can be concluded that the rotations are as follows: one rotation along the Y axis, and another along the X axis. As a side tangent its important to bring up the fact that one the A frame is translated onto the C frame, none of the axis from the A frame are aligned with the C frame, which means that you can start the rotation alongside any axis, that would result in one or more axis from the A frame to coincide with the axis of the C frame, and get to the same point as anyone else that’s doing the same exercise because physically, if the problem is solved correctly, the matrixes product will be equivalent to other products made by other people, and this doesn’t have anything to do with any commutative properties (which matrixes don’t have). It’s more so because by using different axis as reference we create equivalent matrixes.  Basically, it doesn’t matter which rotation anyone choose to start (which in this case there are only 4 possible combinations) as long as the rotations end with the frame A coinciding with the frame C the matrixes will be equivalent.  
 In my case I started the rotation alongside the Y axis by 90 degrees:
 
-<img src="../recursos/imgs/rot_Y_3/jpeg" alt="Rotation1_Y" width="420">
+<img src="../recursos/imgs/rot_Y_3.jpeg" alt="Rotation1_Y" width="420">
 
 Once we star to visualize and follow the rotation is very easy to understand by which axis it needs to be rotated, in the image above its logical that the next rotation is made along the X axis by -30 degrees.
 
