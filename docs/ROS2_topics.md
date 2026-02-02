@@ -176,10 +176,13 @@ if __name__ == "__main__":
 ---
 ## Results
 **Number Publisher Node**
+
 <img src="../recursos/imgs/num_pub_terminal.png" alt="Number Publisher Node terminal" width="420">
 
 **Number Counter Node**
+
 <img src="../recursos/imgs/num_count_terminal.png" alt="Counter Publisher Node terminal" width="420">
 
 **Graph of the nodes realtion**
+
 <img src="../recursos/imgs/nodes_graph_relation.png" alt="Graph node relation" width="420">
