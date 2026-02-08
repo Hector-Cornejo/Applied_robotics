@@ -45,4 +45,50 @@ To obtain the **transformation matrix** for each joint, the Y-axis is not explic
 4) Step 5: The Denavit-Hartenberg Convention.  
 A commonly used convention to select frames of reference in robotics is the Denavit-Hartenberg Convention. In this convention each homogeneous transformation matrix can be represented as the product of four basic transformations.
 
-T_i = R_z(\theta_i) t_z(d_i) t_x(a_i) R_x(\alpha_i)
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>T</mi>
+    <mi>i</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>R</mi>
+    <mi>z</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>&#x3B8;</mi>
+    <mi>i</mi>
+  </msub>
+  <mo stretchy="false">)</mo>
+  <msub>
+    <mi>t</mi>
+    <mi>z</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>d</mi>
+    <mi>i</mi>
+  </msub>
+  <mo stretchy="false">)</mo>
+  <msub>
+    <mi>t</mi>
+    <mi>x</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>a</mi>
+    <mi>i</mi>
+  </msub>
+  <mo stretchy="false">)</mo>
+  <msub>
+    <mi>R</mi>
+    <mi>x</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>&#x3B1;</mi>
+    <mi>i</mi>
+  </msub>
+  <mo stretchy="false">)</mo>
+</math>
