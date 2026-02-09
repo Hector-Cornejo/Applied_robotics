@@ -103,9 +103,7 @@ Where:
     <mi>i</mi>
   </msub>
   <mo stretchy="false">)</mo>
-</math>
-:Rotation about the z-axis from xi-1 to xi 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+</math> :Rotation about the z-axis from xi-1 to xi <math xmlns="http://www.w3.org/1998/Math/MathML">
   <msub>
     <mi>&#x3B8;</mi>
     <mi>i</mi>
