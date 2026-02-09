@@ -563,9 +563,7 @@ Whit this information we can creat a list with all of the D-H parameters and rep
 <img src="../recursos/imgs/example_dh_table.jpeg" alt="D-H table and matrix" width="600">
 
 ### Step 6: Multiply all the transformation matrices  
-Obtain the overall transformation of the robot, from the base to its end factor, by multiplying the individual transformation matirces:  
-
-<img src="../recursos/imgs/example_joint_matrices.jpeg" alt="Tranformation matrices" width="600">
+Obtain the overall transformation of the robot, from the base to its end factor, by multiplying the individual transformation matirces: 
 
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <msubsup>
@@ -624,3 +622,142 @@ Obtain the overall transformation of the robot, from the base to its end factor,
     <mi mathvariant="bold">T</mi>
   </mrow>
 </math>
+
+<img src="../recursos/imgs/example_joint_matrices.jpeg" alt="Tranformation matrices" width="600">
+
+## Exercise 1
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise_1.jpeg" alt="Exercise 1" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise_1_table.jpeg" alt="Exercise 1 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise1_matrices.jpeg" alt="Exercise 1 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+## Exercise 2
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise2.png" alt="Exercise 2" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise2_table.png" alt="Exercise 2 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise2_matrices.jpeg" alt="Exercise 2 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+## Exercise 2
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise2.png" alt="Exercise 2" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise2_table.png" alt="Exercise 2 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise2_matrices.jpeg" alt="Exercise 2 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+## Exercise 3
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise3.png" alt="Exercise 3" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise3_table.jpeg" alt="Exercise 3 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise3_matrices1.jpeg" alt="Exercise 3 matrices" width="600">
+
+<img src="../recursos/imgs/Exercise3_matrices2.jpeg" alt="Exercise 3 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+## Exercise 3
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise3.png" alt="Exercise 3" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise3_table.jpeg" alt="Exercise 3 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise3_matrices1.jpeg" alt="Exercise 3 matrices" width="600">
+
+<img src="../recursos/imgs/Exercise3_matrices2.jpeg" alt="Exercise 3 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+## Exercise 4
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise4.jpeg" alt="Exercise 4" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise4_table.jpeg" alt="Exercise 4 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise4_matrix1.jpeg" alt="Exercise 4 matrices" width="600">
+
+<img src="../recursos/imgs/exercise4_matrix2.jpeg" alt="Exercise 4 matrices" width="600">
+
+<img src="../recursos/imgs/exercise4_matrix3.jpeg" alt="Exercise 4 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
+
+
+## Exercise 5
+To do te analysis of the robot, refer to the steps 1 to 4 of the Important Concepts menu.
+
+<img src="../recursos/imgs/exercise5.jpeg" alt="Exercise 5" width="600">
+
+Firts, the z-axis of every joint are established by following the movement of each joint of the robot as seen in the Step 1.  
+Then the origins are established using the intersections of the z-axis of each joint.  
+After that the x-axis is placed orthogonally to z i-1 and z i.
+Finally the y-axis of each joint is established by following the right hand rule.
+
+<img src="../recursos/imgs/exercise5_table.jpeg" alt="Exercise 5 table" width="600">
+
+Then refer to the step 5, the analysis of movement for each joint using the D-H method to facilitate obtaining the transformation matrix.
+
+<img src="../recursos/imgs/exercise5_matrix1.jpeg" alt="Exercise 5 matrices" width="600">
+
+<img src="../recursos/imgs/exercise5_matrix2.jpeg" alt="Exercise 5 matrices" width="600">
+
+Finally, refer to step 6 to fill the satandar matrix with the contents obtained in the table, thus formulating the matrix for each joint.
