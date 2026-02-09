@@ -94,6 +94,25 @@ A commonly used convention to select frames of reference in robotics is the Dena
 Where:
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <msub>
+    <mi>R</mi>
+    <mi>z</mi>
+  </msub>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>&#x3B8;</mi>
+    <mi>i</mi>
+  </msub>
+  <mo stretchy="false">)</mo>
+</math>
+:Rotation about the z-axis from xi-1 to xi 
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
+    <mi>&#x3B8;</mi>
+    <mi>i</mi>
+  </msub>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <msub>
     <mi>t</mi>
     <mi>x</mi>
   </msub>
@@ -104,6 +123,7 @@ Where:
   </msub>
   <mo stretchy="false">)</mo>
 </math>
+:
 
 If we expand the transformation matrix T:
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
