@@ -54,7 +54,7 @@
 
 # Listas: viñetas, numeradas y de tareas
 
-``` codigo
+``` codigo 
 
 - Item A
     * Subitem A.1

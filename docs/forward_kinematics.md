@@ -1,6 +1,6 @@
 # Forward Kinematics
 
-> Get the matrix and DH placement of the frames, for the following robots
+> Activity: Get the matrix and DH placement of the frames, for the following robots
 
 ---
 
