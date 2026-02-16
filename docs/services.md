@@ -28,8 +28,8 @@ string message # informational, e.g. for error messages
 ```
 
 The (---) separates:  
-- **Request** (client to server): bool request
-- **Response** (server to client): bool success, string message
+- **Request** (client to server): bool request  
+- **Response** (server to client): bool success, string message  
 
 ## 2) Server implementation
 
@@ -42,10 +42,10 @@ from example_interfaces.msg import Int64
 from example_interfaces.srv import SetBool
 ```  
 **What does it do?**
-- Service live under ...srv
--SetBool contains both:
-    - bool request (data)
-    - bool response (successm, string message)  
+- Service live under ...srv  
+- SetBool contains both:  
+    - bool request (data)  
+    - bool response (successm, string message)   
 
 **Important**
 Add **example_interface** to the __package.xml__ file like so:  
@@ -84,8 +84,8 @@ class numCounter(Node):
         super().__init__("number_counter")
 ```  
 **What does it do?**
-- Creates a node class called: **numCounter**
-- Sets the node name to: **number_counter**
+- Creates a node class called: **numCounter**  
+- Sets the node name to: **number_counter**  
 
 ---
 
@@ -95,8 +95,8 @@ class numCounter(Node):
         self.counter = 0 # Start the counter on 0
 ```  
 **What does it do?**
-- Creates the server with it's type: **SetBool**, service name: **/reset_counter**, callback function: **self.read_bool_callback**
-- Starts the counter on 0
+- Creates the server with it's type: **SetBool**, service name: **/reset_counter**, callback function: **self.read_bool_callback**  
+- Starts the counter on 0  
 
 ---
 
@@ -120,12 +120,12 @@ class numCounter(Node):
         return response
 ```  
 **What does it do?**
-- Starts the service callback for /reset_counter
-- Calls the boolean value: **request.data**; If true, resets the counter to 0
-- Indicates succesful reset: **response.success = True**. **response.message = "Counter reset to 0"**
-- Log info for counter reset event: **self.get_logger().info("Counter restarted to 0")**
-- In case the boolean value: **request.data** is false, nothing happens
-- Indicates the reset not performed: **response.success = False**, **response.message = "Counter not reset"**
+- Starts the service callback for /reset_counter  
+- Calls the boolean value: **request.data**; If true, resets the counter to 0  
+- Indicates succesful reset: **response.success = True**. **response.message = "Counter reset to 0"**  
+- Log info for counter reset event: **self.get_logger().info("Counter restarted to 0")**  
+- In case the boolean value: **request.data** is false, nothing happens  
+- Indicates the reset not performed: **response.success = False**, **response.message = "Counter not reset"**  
 
 ---
 
