@@ -41,7 +41,7 @@ from rclpy.node import Node
 from example_interfaces.msg import Int64 
 from example_interfaces.srv import SetBool
 ```  
-**What does it do?**
+**What does it do?**  
 - Service live under ...srv  
 - SetBool contains both:  
     - bool request (data)  
@@ -83,7 +83,7 @@ class numCounter(Node):
         #Initialize node with the name "number_counter"
         super().__init__("number_counter")
 ```  
-**What does it do?**
+**What does it do?**  
 - Creates a node class called: **numCounter**  
 - Sets the node name to: **number_counter**  
 
@@ -94,7 +94,7 @@ class numCounter(Node):
         self.server_ = self.create_service(SetBool, "/reset_counter",self.read_bool_callback) # Creats a service server type SetBool. It needs: (Service type, service name, callback function)
         self.counter = 0 # Start the counter on 0
 ```  
-**What does it do?**
+**What does it do?**  
 - Creates the server with it's type: **SetBool**, service name: **/reset_counter**, callback function: **self.read_bool_callback**  
 - Starts the counter on 0  
 
@@ -119,7 +119,7 @@ class numCounter(Node):
             response.message = "Counter not reset"
         return response
 ```  
-**What does it do?**
+**What does it do?**  
 - Starts the service callback for /reset_counter  
 - Calls the boolean value: **request.data**; If true, resets the counter to 0  
 - Indicates succesful reset: **response.success = True**. **response.message = "Counter reset to 0"**  
