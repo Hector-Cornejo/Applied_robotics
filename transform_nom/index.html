@@ -1,0 +1,801 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../services/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Transform Nomenclature - Applied Robotics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#transform-nomenclature" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Applied Robotics" class="md-header__button md-logo" aria-label="Applied Robotics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Applied Robotics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Transform Nomenclature
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Applied Robotics" class="md-nav__button md-logo" aria-label="Applied Robotics" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Applied Robotics
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación del Proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ROS2_topics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ROS2 Publisher–Subscriber: Number Accumulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comandos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encabezados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ejemplo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Ejemplo de Documentación del Proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fk_kuka_ur/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forward Kinematics for Kuka and UR robots
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forward_kinematics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forward Kinematics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitcmds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 Comandos básicos de Git (primeros pasos)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../services/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ros2 Service Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transform Nomenclature
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transform Nomenclature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-first-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) First problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-second-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Second problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3third-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3)Third problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#important-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important concepts
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-first-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) First problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-second-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Second problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3third-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3)Third problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="transform-nomenclature">Transform Nomenclature</h1>
+<blockquote>
+<p>Activity:
+Write the correct nomenclature for the frame transform, in the following problems.</p>
+</blockquote>
+<hr />
+<h2 id="important-concepts">Important concepts</h2>
+<p>-<strong>What is the right hand rule and how does it help in this tipe of problems?</strong><br />
+The right hand rule is used to define the orientaion of the Cartesian coordinate systems in three dimensions. In a right-handed coordinate system, the directions of the X, Y, and Z axes are related by the right hand: the <strong>index finger</strong> points along the X-axis, the <strong>middle finger</strong> points along the Y-axis,then the <strong>thumb</strong>, extended perpendicular to both, points in the direction of the Z-axis.
+The right-hand rule is also a convention used to determine the direction of rotation and to define whether a rotation is positive or negative. To apply it, point <strong>the thumb of your right hand in the direction of the positive axis of rotation</strong>. The direction in which your fingers curl indicates the positive direction of rotation around that axis.</p>
+<p><img src="../recursos/imgs/right_hand.png" alt="axis" width="420"></p>
+<h2 id="1-first-problem">1) First problem</h2>
+<p><img src="../recursos/imgs/trsf_nom_1.jpeg" alt="Ejercico 1" width="550"></p>
+<p>The first step to solve this problem is to get the matrixes of each rotation of the stablished vector, it is important to solve it following the chronological order in which the problem states the rotations happened, in this case, first the rotation about the Y axis and then the rotation about the X axis.</p>
+<p>-<strong>How can rotation be visualized?</strong><br />
+To better visualize rotational transformations, it is helpful to represent the vector within a Cartesian coordinate system. A rotation about a given axis leaves the component aligned with that axis unchanged, while the remaining components are transformed. For example, a rotation about the Y-axis affects only the X and Z components of the vector, as the rotation takes place in the plane perpendicular to the Y-axis. This behavior is reflected in the corresponding rotation matrix, where the Y component remains constant.</p>
+<p>In the images below, in the drawn cartesian planes, it can be observed the original position vectors, represented by <strong>X_1 and Y_1</strong>, as well as the positions of said vectors after the rotation, represented by <strong>X_2 and Y_2</strong>. Since the problem also has the angle of rotation in both cases, we can use cos and sin relations to find the new coordinates, resulting in the matrixes of each corresponding rotation.</p>
+<p><img src="../recursos/imgs/rotation_y.png" alt="Rotation Y" width="420"></p>
+<p><img src="../recursos/imgs/rotation_x.png" alt="Rotation X" width="420"></p>
+<p>This problem describes a vector experiencing two rotations, so after obtaining the matrix for each rotation we need to multiply said matrixes to obtain the rotation matrix <strong>R</strong> that performs the rotations in the indicated order.
+It is important to remember that matrix multiplication is not commutative so the order in which they are multiplied matters. In the case of rotation matrixes, we order the multiplication from the latest matrix to the first one, as we can see in the following image:</p>
+<p><img src="../recursos/imgs/matrix_mul.png" alt="matrix multiplication" width="420"></p>
+<p>In order to multiply two matrices, the number of columns of the first matrix must be equal to the number of rows of the second matrix. Each element of the resulting matrix is obtained by taking the dot product of a row from the first matrix with a column from the second matrix.</p>
+<p><img src="../recursos/imgs/matrix_res.png" alt="multiplication result" width="420"></p>
+<p>Finally we just need to simplify our result and we get the rotation matrix <strong>R</strong> whit all its axis components:</p>
+<h2 id="_1"><img src="../recursos/imgs/matrix_sim.png" alt="rotation matrix R" width="420"></h2>
+<h2 id="2-second-problem">2) Second problem</h2>
+<p><img src="../recursos/imgs/trsf_nom_2.png" alt="Ejercico 2" width="550"></p>
+<p>In this problem it can be observed that the reference frame experiences two different kinds of movement, a rotation and then translation. Same as the last problem, the movement of the reference frame must be analyzed in order the problem to present them, in this case, first the rotation of the reference frame B with respect to the reference frame A, then the translation form B to A.</p>
+<p><img src="../recursos/imgs/plns_mmnt.jpeg" alt="planes_movement" width="420"></p>
+<p>For the rotation of reference frame B the problem is asking to make said rotation with respect to reference frame A about X_A by 30. This means that we are going to use the right-hand rule in A in order to follow that movement when B is rotated. Like so:</p>
+<p><img src="../recursos/imgs/B_rot_A.jpeg" alt="Rotation of B with respect to A" width="420"></p>
+<p>Notice that since the problem asks to make the rotation with respect to reference frame A about X_A, in the perspective of reference frame B the rotation is negative as such, the rotation angle in the view point of reference frame B is -30 degrees.<br />
+By making the visualization of the rotation in reference frame B, its matrix can be calculated:</p>
+<p><img src="../recursos/imgs/mtx_rot_B.png" alt="The matrix of the rotation on B" width="420"></p>
+<p>The next step would be to calculate the translation of B from A but in this case the problem already establishes it, but since its a 3D space the point is represented as such:</p>
+<p><img src="../recursos/imgs/trns_vect.jpeg" alt="Translation of B from A" width="420"></p>
+<p>Now the problem is asking the formulation of a homogeneous transform matrix. Which is the combination of both rotation and translation in a single transformation. This results in a 4x4 matrix containing the matrix of the rotation and the translation vector. For this particular problem it looks like this:</p>
+<h2 id="_2"><img src="../recursos/imgs/transform_matrix.jpeg" alt="Transformation matrix" width="420"></h2>
+<h2 id="3third-problem">3)Third problem</h2>
+<p><img src="../recursos/imgs/trsf_nom_3.jpeg" alt="Ejercico 2" width="550"></p>
+<p>This problem is asking for the homogeneouus transformation matrix from reference frame A to reference frame B, as well as the transformation matrix from reference frame A to reference frame C. So in this case we have to different matrixes that are independent from one another so it each one recures an individual analysis of the movement that composes them.</p>
+<p>In my case I decided to star by studying the transformation matrix from reference frame A to reference frame B, keep in mind that it won’t affect the result which one is solved first since they don’t hold any relation to each other.</p>
+<p>For the movement from frame A to B it can be concluded by looking at image presented that the first movement of this transformation is a translation. As shown in the following image, the translation from frame A to B is simple as its only translation over the X axis, meaning that the vector would look like this (considering that we are solving a problem in a 3D space):</p>
+<p><img src="../recursos/imgs/trnsl_A_B_3.jpeg" alt="Translation vector from A to B" width="420"></p>
+<p>Now the translated frame must be rotated in a way that matches its destination as it’s shown. It can be observed that the translated A frame Y_A and X_A axis are in the opposite direction in comparison to the Y_B and X_A axis. It can be concluded that the rotation is about the Z axes by an angle of 180 degrees:</p>
+<p><img src="../recursos/imgs/rot_B_3.jpeg" alt="Rotation of frame B" width="420"></p>
+<p>Having the rotation visualized, the rotation matrix can be formulated:</p>
+<p><img src="../recursos/imgs/matrix_B_3.jpeg" alt="Rotation matrix B" width="420"></p>
+<p>Now all that is left is to obtain the homogeneous transformation matrix by combining both the vector translation and the matrix rotation as we did the last problem:</p>
+<p><img src="../recursos/imgs/transformation_B_3.jpeg" alt="Transformation A to B" width="420"></p>
+<p>For the homogeneous transformation matrix from A to C we can assume that the first movement was also a translation, this translation is composed of coordinates. X and Z which results in a translator vector:</p>
+<p><img src="../recursos/imgs/trnsl_A_C_3.jpeg" alt="Translation vector from A to C" width="420"></p>
+<p>It now can be observed that to complete the transformation from A to C, we need rotations, and after analyzing the image it can be concluded that the rotations are as follows: one rotation along the Y axis, and another along the X axis. As a side tangent its important to bring up the fact that one the A frame is translated onto the C frame, none of the axis from the A frame are aligned with the C frame, which means that you can start the rotation alongside any axis, that would result in one or more axis from the A frame to coincide with the axis of the C frame, and get to the same point as anyone else that’s doing the same exercise because physically, if the problem is solved correctly, the matrixes product will be equivalent to other products made by other people, and this doesn’t have anything to do with any commutative properties (which matrixes don’t have). It’s more so because by using different axis as reference we create equivalent matrixes.  Basically, it doesn’t matter which rotation anyone choose to start (which in this case there are only 4 possible combinations) as long as the rotations end with the frame A coinciding with the frame C the matrixes will be equivalent.<br />
+In my case I started the rotation alongside the Y axis by 90 degrees:</p>
+<p><img src="../recursos/imgs/rot_Y_3.jpeg" alt="Rotation1_Y" width="420"></p>
+<p>Once we star to visualize and follow the rotation is very easy to understand by which axis it needs to be rotated, in the image above its logical that the next rotation is made along the X axis by -30 degrees.</p>
+<p><img src="../recursos/imgs/rot_X_3.jpeg" alt="Rotation1_X" width="420"></p>
+<p>Once we have both matrixes we need to multiply them to now the complete rotation of the AC frame.</p>
+<p><img src="../recursos/imgs/matrix_mult_3.jpeg" alt="Matrix AC rotation poroduct" width="420"></p>
+<p>After simplifying the matrix we get this:</p>
+<p><img src="../recursos/imgs/matrix_simp_3.jpeg" alt="Matrix AC rotation result" width="420"></p>
+<p>All that is left is to obtain the homogeneous transformation matrix by combining both the vector translations with the frame rotation:</p>
+<p><img src="../recursos/imgs/trnsfrm_A_C_3.jpeg" alt="Homgeneous transformation AC" width="420"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
